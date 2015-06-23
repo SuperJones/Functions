@@ -3,6 +3,7 @@
 
 
 import random
+import statistics
 
 beginList = []
 for i in range(10):
@@ -15,9 +16,10 @@ for i in range(10):
 print(beginList)
 
 	
-
-
-
 #Write a function called average that will take the list as a parameter
 #and return the average.
 
+def average(yourList):
+	return statistics.mean(yourList)
+	
+print(average(beginList))
