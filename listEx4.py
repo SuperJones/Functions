@@ -7,7 +7,8 @@ import random
 beginList = []
 for i in range(10):
 	addNum = random.randrange(0, 1000)
-	beginList = beginList + [addNum]
+	#beginList = beginList + [addNum]
+	beginList =  beginList.append(addNum)
 
 print(beginList)
 
