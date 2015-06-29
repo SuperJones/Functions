@@ -1,25 +1,20 @@
-#Create a list containing 100 random integers between 0 and 1000.
-#(use iteration, append, and the random module). 
-
-
 import random
-import statistics
 
 beginList = []
 for i in range(10):
 	addNum = random.randrange(0, 1000)
-	#beginList = beginList + [addNum]
-	#beginList =  beginList.append(addNum)
-	#Remember that methods like append return None, not a value.
 	beginList.append(addNum)
 	
-print(beginList)
+print(typebeginList)
 
 	
 #Write a function called average that will take the list as a parameter
 #and return the average.
-
-def average(yourList):
-	return statistics.mean(yourList)
 	
+def average(yourList):
+    theSum = 0 
+    for i in yourList:
+        theSum = theSum + i
+    return theSum
+		
 print(average(beginList))
