@@ -5,7 +5,12 @@
 infile = open("C:\Users\NinjaZeroOne\Desktop\studentdata.txt", "r")
 line = infile.readline()
 
-
+def average(yourList):
+	theSum = 0
+	for i in yourList:
+        theSum = theSum + i
+	return theSum
+	
 #first I need the to separate the numbers and turn them into ints
 def separate (your_file):
 	values = your_file.split()
