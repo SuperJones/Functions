@@ -6,10 +6,12 @@ infile = open("C:\Users\NinjaZeroOne\Desktop\studentdata.txt", "r")
 line = infile.readline()
 
 def average(yourList):
-	theSum = 0
-	for i in yourList:
+    theSum = 0 
+    for i in yourList:
+    	i = int(i)
         theSum = theSum + i
-	return theSum
+	finalNum = theSum / (len(yourList) -1)
+    return finalNum
 
 
 while line:
