@@ -17,6 +17,6 @@ def average(yourList):
 while line:
 	values = line.split()
 	print (values[0], "average is", average(values[1:]))
-
+    line = infile.readline()
     
 infile.close()
