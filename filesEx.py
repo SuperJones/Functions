@@ -1,4 +1,4 @@
-fileref = open('C:\Users\NinjaZeroOne\Desktop\qbdata.txt', 'r')
+fileref = open('C:\Users\NinjaZeroOne\Desktop\httlacs\qbdata.txt', 'r')
 
 for aline in fileref:
 	values = aline.split()
