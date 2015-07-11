@@ -16,3 +16,8 @@ for achar in userString:
             stringDiction[achar] = stringDiction[achar] + 1
         else:   
             stringDiction[achar] = 1
+           
+keys = stringDiction.keys()
+keys.sort()
+for achar in keys:
+    print(achar, stringDiction[achar])
