@@ -3,13 +3,14 @@
 #alphabetical order which occur in #the string together with the 
 #number of times each letter occurs. Case should be ignored. 
 
-
-
 import string
  
 userString = (raw_input("Please enter a sentence: "))
  
 for achar in userString:
-    if achar == string.ascii_lowercase or achar == string.ascii_uppercase:
-        print("yes")
+    if achar in string.ascii_lowercase:
+        print("lower")
+    elif achar in string.ascii_uppercase:
+        print("upper")
     else:
+        print("no")
