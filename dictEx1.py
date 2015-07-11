@@ -7,10 +7,12 @@ import string
  
 userString = (raw_input("Please enter a sentence: "))
  
+userString = userString.lower()
+ 
+stringDiction = {}
 for achar in userString:
     if achar in string.ascii_lowercase:
-        print("lower")
-    elif achar in string.ascii_uppercase:
-        print("upper")
-    else:
-        print("no")
+        if achar in stringDiction:
+            stringDiction[achar] = stringDiction[achar] + 1
+        else:   
+            stringDiction[achar] = 1
