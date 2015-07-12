@@ -16,14 +16,14 @@ for aline in infile:
         aword = aword.replace(']', '').replace(';', '')
    
         
-        if word.isalpha():             #Make sure it is not a number
+        if aword.isalpha():             #Make sure it is not a number
             if aword in aliceDiction:  #Check to see if word is in dictionary
                 aliceDiction[aword] = aliceDiction[aword] + 1
             else:
                 aliceDiction[aword] = 1
  
   
-print(aliceDiction)   
+#print(aliceDiction)   
 #keys = aliceDiction.keys()
 #keys.sort()
 
@@ -32,5 +32,5 @@ print(aliceDiction)
     #outfile.write(aword + "" + str(aliceDiction[aword]) )
     #outfile.write('\n')
 
-print("The word 'alice' appears " + str(aliceDiction.get('alice')) + "times in the book.")    
+print("The word 'alice' appears " + str(aliceDiction.get('Alice')) + "times in the book.")    
 #outfile.close()
