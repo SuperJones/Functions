@@ -5,14 +5,15 @@ infile = open("C:\Users\NinjaZeroOne\Desktop\httlacs\AliceInWonderland.txt", 'r'
  
 aliceDiction = {}           #create empty dictionary
  
-for aline in infile:
-    values = aline.split()  #split each line into words
-    for aword in values:    #check to see if word is in dictionary
+for aline in infile:  
+    for aword in aline.split():        
        
-        if aword in aliceDiction:
-            aliceDiction[aword] = aliceDiction[aword] + 1
-        else:
-            aliceDiction[aword] = 1
+        
+        if word.isalpha():             #Make sure it is not a number
+            if aword in aliceDiction:  #Check to see if word is in dictionary
+                aliceDiction[aword] = aliceDiction[aword] + 1
+            else:
+                aliceDiction[aword] = 1
  
   
 print(aliceDiction)   
@@ -24,5 +25,5 @@ print(aliceDiction)
     #outfile.write(aword + "" + str(aliceDiction[aword]) )
     #outfile.write('\n')
 
-print("The word 'alice' appears " + str(aliceDiction['alice']) + "times in the book.")    
+print("The word 'alice' appears " + str(aliceDiction.get('alice')) + "times in the book.")    
 #outfile.close()
