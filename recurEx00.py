@@ -13,16 +13,18 @@ def reverse(newString):
         return convertString[0]
     else:
         return reverse(convertString[1:]) + convertString[0]
-        
-def isPal(s):
-	if this:
-		return True
+
+def isPal(almostFinalString):
+    ThisIsIt = reverse(almostFinalString)
+    if ThisIsIt == almostFinalString:
+        return True
     else:
         return False
  
 
 userString = raw_input("Please enter Palindrome: ")
-print(removeWhite(userString))
+print(ispal(removeWhite(userString)))
+
 
 
 testEqual(isPal(removeWhite("x")),True)
