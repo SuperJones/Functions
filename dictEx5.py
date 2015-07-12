@@ -11,11 +11,11 @@ pirate_dict = {'man': 'matey', 'is':'b', 'hello':'avast',
 
 user_string = raw_input("Type in regular english sentence: ")
  
-pirate_string = ""
+new_string = ""
 for aword in user_string:
-    for akey in pirate_dict.keys:
-        if aword == akey:
-            user_string[aword] = akey
+        if aword in pirate_dict.keys:
+        	new_string = new_string + pirate_dict.get(aword)
+            
                   
  
-print(user_string)
+print(new_string)
