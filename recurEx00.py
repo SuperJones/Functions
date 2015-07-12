@@ -9,13 +9,16 @@ def removeWhite(s):
  
  
 def isPal(s):
-    return False
+	if this:
+		return True
+    else:
+        return False
  
 
 userString = raw_input("Please enter Palindrome: ")
 print(removeWhite(userString))
 
- 
+
 testEqual(isPal(removeWhite("x")),True)
 testEqual(isPal(removeWhite("radar")),True)
 testEqual(isPal(removeWhite("hello")),False)
