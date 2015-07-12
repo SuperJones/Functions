@@ -13,8 +13,8 @@ user_string = raw_input("Type in regular english sentence: ")
  
 new_string = ""
 for aword in user_string:
-        if aword in pirate_dict.keys:
-        	new_string = new_string + pirate_dict.get(aword)
+    if aword in pirate_dict.keys():
+        new_string = new_string + pirate_dict.get(aword)
             
                   
  
