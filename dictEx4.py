@@ -1,19 +1,22 @@
 import string
  
-infile = open("", 'r')
-outfile = open("alice_words.txt", 'w')
+infile = open("C:\Users\NinjaZeroOne\Desktop\httlacs\AliceInWonderland.txt", 'r')
  
-aliceDiction = {}           #create empty dictionary
+aliceDiction = {}   #create empty dictionary
  
 for aline in infile:
     values = aline.split()  #split each line into words
-    j = 0
-    for aword in values:
-        if len(aword) >= j:
-            new_word = aword
-            j = len(aword)           
+    for aword in values:    #check to see if word is in dictionary
+        if aword in aliceDiction:
+            aliceDiction[aword] = aliceDiction[aword] + 1
         else:
-            #what does it need to do if it is not greater than
+            aliceDiction[aword] = 1
+           
+j = 0           
+for akey in aliceDiction.keys:
+    if len(akey) >= j:
+        largest_word = akey
+        j = len(akey)           
  
    
  
@@ -21,4 +24,3 @@ for aline in infile:
 print(aliceDiction[alice])
  
 infile.close()
-outfile.close()
