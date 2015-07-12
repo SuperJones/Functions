@@ -7,7 +7,13 @@ def removeWhite(s):
             new_string = new_string + achar
     return new_string
  
- 
+def reverse(newString):
+    convertString = newString
+    if len(convertString) == 1:
+        return convertString[0]
+    else:
+        return reverse(convertString[1:]) + convertString[0]
+        
 def isPal(s):
 	if this:
 		return True
