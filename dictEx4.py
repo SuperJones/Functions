@@ -38,5 +38,6 @@ for akey in ks:
  
  
 print(largest_word)
+print(len(largest_word))
  
 infile.close()
