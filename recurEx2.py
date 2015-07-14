@@ -1,7 +1,7 @@
 #Write a recursive function to reverse a list
 
-def lsReverse(numlist):
-    new_list = []   
+def lsReverse(numlist, new_list = []):
+ 
     if len(new_list) == len(numlist):
         return new_list
     else:
