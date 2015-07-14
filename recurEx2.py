@@ -1,10 +1,12 @@
 #Write a recursive function to reverse a list
 
-def lsReverse(numList):
+def lsReverse(numlist):
     new_list = []   
-    if len(new_list) == len(numList):
+    if len(new_list) == len(numlist):
         return new_list
     else:
-        return numList[len(numlist) - 1] + lsReverse(numlist[0:(len(numlist) - 1)])
+    	new_list.append(numlist[-1])
+    	numlist.pop(-1)
+    	return lsReverse(numlist)
 
 print(lsReverse([1,3,5,7,9]))
