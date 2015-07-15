@@ -25,7 +25,13 @@ class Point:
     def slope_from_origin(self):
         #slope equals rise over run
         #y2-y1 over x2-x2
-        return (self.y - 0) / (self.x -0 )
+        # if the orgin is zero then there will be an issue. because
+        # a number divided by 0 is an error.
+        
+        if self.x == 0:
+            return none 
+        else:
+            return (self.y - 0) / (self.x -0 )
        
 p = Point(3, 4)
 q = Point(5, 12)
