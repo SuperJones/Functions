@@ -21,10 +21,11 @@ class Point:
          mx = (self.x + target.x) / 2
          my = (self.y + target.y) / 2
          return Point(mx, my)
-         
+
     def slope_from_origin(self):
         #slope equals rise over run
         #y2-y1 over x2-x2
+        return (self.y - 0) / (self.x -0 )
        
 p = Point(3, 4)
 q = Point(5, 12)
@@ -33,3 +34,5 @@ mid = p.halfway(q)
 print(mid)
 print(mid.getX())
 print(mid.getY())
+print(p.slope_from_origin())
+
